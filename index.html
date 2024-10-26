@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculator</title>
+  </head>
+
+  <body>
+    <div>
+      <h1 id="test">أهلا وسهلا بكم</h1>
+      <h2 id="test2">لأجراء عملياتك الحسابية</h2>
+    </div>
+
+    <div>
+      <label for="number1">رقم 1</label>
+      <input onchange="resut_result()" id="number1" type="number" />
+      <br />
+      <label for="nnumber2">رقم 2</label>
+      <input onchange="resut_result()" id="number2" type="number" />
+    </div>
+
+    <div>
+      <label for="operator">operator</label>
+      <select onchange="resut_result()" name="operator" id="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">×</option>
+        <option value="/">/</option>
+      </select>
+      <br />
+      <button onclick="calculate()">calculate</button>
+      <hr />
+    </div>
+
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
